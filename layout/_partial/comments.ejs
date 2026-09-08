@@ -12,7 +12,7 @@
         // 加载 Waline CSS
         const walineCSS = document.createElement('link');
         walineCSS.rel = 'stylesheet';
-        walineCSS.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+        walineCSS.href = 'https://unpkg.com/@waline/client@3.15.2/dist/waline.css';
         document.head.appendChild(walineCSS);
         
         // 加载 Waline JS
@@ -20,7 +20,7 @@
         walineScript.type = 'module';
         walineScript.onload = function() {
           // 确保 Waline 加载后再初始化
-          import('https://unpkg.com/@waline/client@v3/dist/waline.js').then(({ init }) => {
+          import('https://unpkg.com/@waline/client@3.15.2/dist/waline.js').then(({ init }) => {
             const waline = init({
               el: '#waline',
               serverURL: '<%= theme.comments.waline.serverURL %>',
@@ -71,7 +71,7 @@
             });
           });
         };
-        walineScript.src = 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        walineScript.src = 'https://unpkg.com/@waline/client@3.15.2/dist/waline.js';
         document.body.appendChild(walineScript);
       </script>
     

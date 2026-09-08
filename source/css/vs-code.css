@@ -187,6 +187,11 @@
   min-width: 0;
 }
 
+/* 卡片标题与文件图标居中对齐，不继承通用标题的底部间距。 */
+.post-card .post-title {
+  margin-bottom: 0;
+}
+
 /* 文章缩略图（小预览图） */
 .post-thumbnail {
   flex-shrink: 0;
