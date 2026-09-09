@@ -987,30 +987,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--vscode-link-hover) !important;
 }
 
-/* 订阅链接保持可见，避免悬停展开时被全局链接宽度限制挤压、反复换行。 */
-#waline .wl-meta-foot {
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-}
-
-#waline .wl-meta-foot > .wl-rss {
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  max-width: 100%;
-  overflow: visible;
-  transition: none;
-}
-
-#waline .wl-meta-foot > .wl-rss > a {
-  align-items: center;
-  max-width: none;
-  white-space: nowrap;
-}
-
-#waline .wl-meta-foot > .wl-rss > a > svg {
-  flex-shrink: 0;
-}
-
 /* Giscus iframe 样式 */
 .giscus, .giscus-frame {
   width: 100%;
