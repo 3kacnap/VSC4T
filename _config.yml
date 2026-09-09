@@ -155,7 +155,7 @@ comments:
 #   large: /favicon-192x192.png         # 192x192 PNG (Android)
 #   apple_touch_icon: /apple-touch-icon.png  # 180x180 (iOS)
 favicon:
-  ico: /favicon.ico
+  ico: /favicon.ico?v=2
 
 # 自定义 CSS 和 JS
 custom_css:
